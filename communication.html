@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Communication Hub</title>
+    <link rel="stylesheet" href="communication.css">
+</head>
+<body>
+
+<header>
+    <h1>🌌 Teenova Communication Hub</h1>
+    <p>Connect • Discuss • Collaborate</p>
+</header>
+
+<div class="container">
+
+    <!-- DIRECT MESSAGING -->
+    <section class="card">
+        <h2>💬 Direct Messaging</h2>
+        <div id="chatBox" class="chat-box"></div>
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <!-- FORUM -->
+    <section class="card">
+        <h2>🛰 Discussion Board</h2>
+        <input type="text" id="forumTitle" placeholder="Discussion Title">
+        <textarea id="forumContent" placeholder="Share your idea..."></textarea>
+        <button onclick="postDiscussion()">Post</button>
+
+        <div id="forumContainer"></div>
+    </section>
+
+    <!-- POLL -->
+    <section class="card">
+        <h2>📊 Community Poll</h2>
+        <p>Which planet should humans colonize first?</p>
+
+        <button onclick="vote('Mars')">Mars</button>
+        <button onclick="vote('Venus')">Venus</button>
+        <button onclick="vote('Europa')">Europa</button>
+
+        <div id="pollResults"></div>
+    </section>
+
+    <!-- MENTOR FEEDBACK -->
+    <section class="card">
+        <h2>🧑‍🚀 Mentor Feedback</h2>
+        <textarea id="mentorInput" placeholder="Describe your project..."></textarea>
+        <button onclick="requestFeedback()">Request Feedback</button>
+<script src="communification.js"></script>
+</body>
+</html>

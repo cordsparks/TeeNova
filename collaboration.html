@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teenova Collaboration Hub</title>
+    <link rel="stylesheet" href="collab.css">
+</head>
+<body>
+
+<h1>🚀 Teenova Mission Rooms</h1>
+
+<!-- MISSION ROOMS -->
+<div class="rooms">
+    <button onclick="openRoom('Mars Colonization')">Mars Colonization</button>
+    <button onclick="openRoom('Asteroid Mining')">Asteroid Mining</button>
+    <button onclick="openRoom('Alien Life')">Alien Life</button>
+</div>
+
+<div id="roomSection" class="hidden">
+    <h2 id="roomTitle"></h2>
+
+    <!-- IDEA SUBMISSION -->
+    <div class="card">
+        <h3>💡 Submit Idea</h3>
+        <input type="text" id="ideaInput" placeholder="Enter your idea">
+        <button onclick="submitIdea()">Submit</button>
+        <ul id="ideaList"></ul>
+    </div>
+
+    <!-- WHITEBOARD -->
+    <div class="card">
+        <h3>🪐 Shared Whiteboard</h3>
+        <canvas id="whiteboard" width="500" height="300"></canvas>
+        <br>
+        <button onclick="clearBoard()">Clear Board</button>
+    </div>
+
+    <!-- TEAM PROJECTS -->
+    <div class="card">
+        <h3>👩‍🚀 Team Projects</h3>
+        <input type="text" id="teamName" placeholder="Team Name">
+        <input type="text" id="taskInput" placeholder="Task">
+        <input type="date" id="deadlineInput">
+        <button onclick="addTeam()">Create Team Task</button>
+        <ul id="teamList"></ul>
+    </div>
+
+    <!-- PRIVATE PROJECT SPACE -->
+    <div class="card">
+        <h3>🔒 Private Project Space</h3>
+        <textarea id="privateNotes" placeholder="Private brainstorming notes..."></textarea>
+        <button onclick="savePrivate()">Save Notes</button>
+        <p id="privateMsg"></p>
+    </div>
+
+</div>
+
+<script src="collab.js"></script>
+</body>
+</html>

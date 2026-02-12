@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teenova Learning Hub</title>
+    <link rel="stylesheet" href="learning.css">
+</head>
+<body>
+
+<h1>🌌 Teenova Learning & Knowledge Hub</h1>
+
+<!-- SPACE NEWS -->
+<div class="card">
+    <h2>📰 Space News</h2>
+    <div id="newsFeed"></div>
+</div>
+
+<!-- MINI LESSONS -->
+<div class="card">
+    <h2>🚀 Mini Missions</h2>
+    <button onclick="startMission(1)">Build Your First Satellite</button>
+    <button onclick="startMission(2)">Navigate a Wormhole</button>
+    <p id="missionText"></p>
+    <p id="missionResult"></p>
+</div>
+
+<!-- ASK AN EXPERT -->
+<div class="card">
+    <h2>👨‍🚀 Ask an Expert</h2>
+    <textarea id="questionInput" placeholder="Ask a question..."></textarea>
+    <button onclick="submitQuestion()">Submit Question</button>
+    <ul id="questionList"></ul>
+</div>
+
+<!-- RESOURCE LIBRARY -->
+<div class="card">
+    <h2>📚 Resource Library</h2>
+    <ul>
+        <li><a href="#">Astronomy Basics PDF</a></li>
+        <li><a href="#">NASA Mars Mission Video</a></li>
+        <li><a href="#">Astrophysics Tutorial</a></li>
+        <li><a href="#">Rocket Engineering Guide</a></li>
+    </ul>
+</div>
+
+<!-- INTERACTIVE QUIZ -->
+<div class="card">
+    <h2>🧠 Space Quiz</h2>
+    <p id="quizQuestion"></p>
+    <div id="quizOptions"></div>
+    <p id="quizScore"></p>
+</div>
+
+<script src="learning.js"></script>
+</body>
+</html>

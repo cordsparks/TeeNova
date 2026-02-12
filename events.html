@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Events & Competitions</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+
+<header>
+    <h1>🌌 Teenova Events & Competitions</h1>
+    <p>Join events, learn, and compete!</p>
+</header>
+
+<div class="container">
+
+    <!-- VIRTUAL SCIENCE FAIR -->
+    <section class="card">
+        <h2>🧪 Virtual Science Fair</h2>
+        <input type="text" id="projectTitle" placeholder="Project Title">
+        <textarea id="projectDesc" placeholder="Describe your project"></textarea>
+        <button onclick="submitProject()">Submit Project</button>
+        <div id="projectContainer"></div>
+    </section>
+
+    <!-- HACKATHON / CODING CHALLENGE -->
+    <section class="card">
+        <h2>💻 Coding Challenges</h2>
+        <p>Build a space-themed app, simulation, or tool!</p>
+        <textarea id="challengeSubmission" placeholder="Describe your solution"></textarea>
+        <button onclick="submitChallenge()">Submit Solution</button>
+        <div id="challengeContainer"></div>
+    </section>
+
+    <!-- WEBINARS / GUEST TALKS -->
+    <section class="card">
+        <h2>🎙 Webinars & Guest Talks</h2>
+        <ul>
+            <li>🚀 NASA Engineer: Mars Rover Insights - Feb 20</li>
+            <li>🌌 Astronomer: Exoplanet Discoveries - Mar 3</li>
+            <li>🛰 SpaceX Developer: Starship Missions - Mar 15</li>
+        </ul>
+    </section>
+
+    <!-- MISSION COMPLETION EVENTS -->
+    <section class="card">
+        <h2>🌠 Mission Completion Event</h2>
+        <p>Collectively design a space station!</p>
+        <button onclick="completeMission()">Contribute to Mission</button>
+        <p id="missionProgress">Progress: 0%</p>
+    </section>
+
+    <!-- SPACE TRIVIA NIGHT -->
+    <section class="card">
+        <h2>🧠 Space Trivia Night</h2>
+        <p id="triviaQuestion"></p>
+        <div id="triviaOptions"></div>
+        <p id="triviaScore"></p>
+    </section>
+
+</div>
+
+<script src="events.js"></script>
+</body>
+</html>

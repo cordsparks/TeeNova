@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header>
+    <h1>🛠 Teenova Admin Dashboard</h1>
+    <p>Manage users, projects, events, and analytics</p>
+</header>
+
+<div class="container">
+
+    <!-- USER MANAGEMENT -->
+    <section class="card">
+        <h2>👥 User Management</h2>
+        <input type="text" id="newUser" placeholder="Enter new user's username">
+        <button onclick="approveUser()">Approve User</button>
+        <div id="userList"></div>
+    </section>
+
+    <!-- PROJECT MODERATION -->
+    <section class="card">
+        <h2>🛰 Project Moderation</h2>
+        <textarea id="projectModeration" placeholder="Enter project description"></textarea>
+        <button onclick="approveProject()">Approve Project</button>
+        <div id="approvedProjects"></div>
+    </section>
+
+    <!-- EVENT MANAGEMENT -->
+    <section class="card">
+        <h2>🎉 Event Management</h2>
+        <input type="text" id="eventName" placeholder="Event Name">
+        <input type="date" id="eventDate">
+        <button onclick="createEvent()">Create Event</button>
+        <ul id="eventList"></ul>
+    </section>
+
+    <!-- ANALYTICS DASHBOARD -->
+    <section class="card">
+        <h2>📊 Analytics Dashboard</h2>
+        <p>Total Users: <span id="totalUsers">0</span></p>
+        <p>Total Projects: <span id="totalProjects">0</span></p>
+        <p>Active Events: <span id="activeEvents">0</span></p>
+    </section>
+
+    <!-- CONTENT UPDATES -->
+    <section class="card">
+        <h2>📝 Content Updates</h2>
+        <input type="text" id="newModuleTitle" placeholder="Module / Quiz Title">
+        <textarea id="newModuleContent" placeholder="Module / Quiz Content"></textarea>
+        <button onclick="addContent()">Add Content</button>
+        <div id="contentList"></div>
+    </section>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

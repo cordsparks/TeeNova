@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Notifications</title>
+    <link rel="stylesheet" href="notifications.css">
+</head>
+<body>
+
+<header>
+    <h1>🔔 Teenova Notifications</h1>
+    <p>Stay updated on your space adventures!</p>
+</header>
+
+<div class="container">
+
+    <!-- ACTIVITY NOTIFICATIONS -->
+    <section class="card">
+        <h2>📌 Activity Notifications</h2>
+        <ul id="activityList"></ul>
+        <button onclick="generateActivity()">Simulate New Activity</button>
+    </section>
+
+    <!-- MISSION REMINDERS -->
+    <section class="card">
+        <h2>🚀 Mission Reminders</h2>
+        <ul id="missionList"></ul>
+        <button onclick="generateMissionReminder()">Simulate Mission Reminder</button>
+    </section>
+
+    <!-- ACHIEVEMENT ALERTS -->
+    <section class="card">
+        <h2>🏅 Achievement Alerts</h2>
+        <ul id="achievementList"></ul>
+        <button onclick="generateAchievement()">Simulate Achievement</button>
+    </section>
+
+    <!-- WEEKLY DIGEST -->
+    <section class="card">
+        <h2>📰 Weekly Digest</h2>
+        <div id="weeklyDigest"></div>
+        <button onclick="generateWeeklyDigest()">Generate Digest</button>
+    </section>
+
+</div>
+
+<script src="notifications.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* GENERAL STYLING */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #01010d, #0a0a25);
+    color: white;
+}
+
+header {
+    background: #0e0e45;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #00c3ff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background: #00c3ff;
+    color: #01010d;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero .btn:hover {
+    background: #0088cc;
+}
+
+/* CARDS SECTIONS */
+.cards-section {
+    padding: 40px 20px;
+}
+
+.cards-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #00c3ff;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,200,255,0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card button {
+    padding: 8px 15px;
+    background: #00c3ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.card button:hover {
+    background: #0088cc;
+}
+
+/* DASHBOARD CARDS */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0e0e45;
+    margin-top: 30px;
+}

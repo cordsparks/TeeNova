@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Safety & Moderation</title>
+    <link rel="stylesheet" href="safety.css">
+</head>
+<body>
+
+<header>
+    <h1>🛡 Teenova Safety & Moderation</h1>
+    <p>Keeping our space community safe and friendly</p>
+</header>
+
+<div class="container">
+
+    <!-- TEEN-ONLY ACCESS -->
+    <section class="card">
+        <h2>🔑 Teen Access Verification</h2>
+        <input type="number" id="userAge" placeholder="Enter your age (13-19)">
+        <button onclick="verifyAge()">Verify Age</button>
+        <p id="ageResult"></p>
+    </section>
+
+    <!-- CONTENT MODERATION -->
+    <section class="card">
+        <h2>⚠ Content Moderation</h2>
+        <textarea id="userPost" placeholder="Write your post..."></textarea>
+        <button onclick="checkContent()">Submit Post</button>
+        <div id="moderationResult"></div>
+    </section>
+
+    <!-- PRIVACY SETTINGS -->
+    <section class="card">
+        <h2>🔒 Privacy Settings</h2>
+        <label><input type="checkbox" id="showPosts"> Show my posts publicly</label><br>
+        <label><input type="checkbox" id="showProjects"> Show my projects publicly</label><br>
+        <label><input type="checkbox" id="allowMessages"> Allow direct messages</label><br>
+        <button onclick="savePrivacy()">Save Settings</button>
+        <p id="privacyResult"></p>
+    </section>
+
+    <!-- REPORTING & BLOCKING -->
+    <section class="card">
+        <h2>🚨 Report / Block User</h2>
+        <input type="text" id="reportUser" placeholder="Username to report/block">
+        <select id="reportReason">
+            <option value="harassment">Harassment</option>
+            <option value="spam">Spam</option>
+            <option value="inappropriate">Inappropriate Content</option>
+        </select>
+        <button onclick="submitReport()">Submit Report</button>
+        <p id="reportResult"></p>
+    </section>
+
+</div>
+
+<script src="safety.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Creative Zone</title>
+    <link rel="stylesheet" href="creative.css">
+</head>
+<body>
+
+<header>
+    <h1>🌌 Teenova Creative Zone</h1>
+    <p>Imagine. Create. Explore.</p>
+</header>
+
+<div class="container">
+
+    <!-- ART & STORY CORNER -->
+    <section class="card">
+        <h2>🎨 Art & Story Corner</h2>
+        <input type="text" id="storyTitle" placeholder="Story or Artwork Title">
+        <textarea id="storyContent" placeholder="Write your sci-fi story..."></textarea>
+        <button onclick="postStory()">Post</button>
+        <div id="storyContainer"></div>
+    </section>
+
+    <!-- MUSIC LAB -->
+    <section class="card">
+        <h2>🎵 Music & Soundscape Lab</h2>
+        <input type="text" id="musicTitle" placeholder="Track Title">
+        <input type="file" id="musicFile" accept="audio/*">
+        <button onclick="uploadMusic()">Upload</button>
+        <div id="musicContainer"></div>
+    </section>
+
+    <!-- SIMULATION SANDBOX -->
+    <section class="card">
+        <h2>🛰 Simulation Sandbox</h2>
+        <canvas id="orbitCanvas" width="400" height="400"></canvas>
+        <button onclick="startSimulation()">Start Orbit Simulation</button>
+    </section>
+
+    <!-- PHOTO CONTEST -->
+    <section class="card">
+        <h2>📸 Space Art Contest</h2>
+        <input type="file" id="photoUpload" accept="image/*">
+        <button onclick="submitPhoto()">Submit Entry</button>
+        <div id="photoGallery"></div>
+    </section>
+
+    <!-- IDEA LAB -->
+    <section class="card">
+        <h2>🚀 Idea Lab Challenge</h2>
+        <p>Challenge: Design Your Own Space Station</p>
+        <textarea id="ideaInput" placeholder="Describe your design..."></textarea>
+        <button onclick="submitIdea()">Submit Idea</button>
+        <div id="ideaContainer"></div>
+    </section>
+
+</div>
+
+<script src="creative.js"></script>
+</body>
+</html>

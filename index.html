@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teenova - Explore Space</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <h1>🌌 Teenova</h1>
+        <nav>
+            <a href="learning.html">Learning</a>
+            <a href="projects.html">Projects</a>
+            <a href="events.html">Events</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="creative.html">Creative</a>
+            <a href="communication.html">Communication</a>
+            <a href="admin.html">Admin</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="gamification.html">Gamification</a>
+            </nav>
+        </div>
+</header>
+
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Explore, Learn, and Create in the Universe</h2>
+        <p>Grow your knowledge about space and astronomy with guided missions, projects, and challenges.</p>
+        <a href="#learning" class="btn">Start Learning</a>
+    </section>
+
+    <!-- LEARNING HUB -->
+    <section id="learning" class="cards-section">
+        <h2>📚 Learning Modules</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Build Your First Satellite</h3>
+                <p>Step-by-step interactive module to understand satellites and orbits.</p>
+                <button onclick="alert('Launching Module...')">Start Module</button>
+            </div>
+            <div class="card">
+                <h3>Navigate a Wormhole</h3>
+                <p>Learn about wormholes and relativity through interactive simulation.</p>
+                <button onclick="alert('Launching Module...')">Start Module</button>
+            </div>
+            <div class="card">
+                <h3>Plan a Mars Colony</h3>
+                <p>Design your colony while learning about Mars conditions and sustainability.</p>
+                <button onclick="alert('Launching Module...')">Start Module</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS & IDEA LAB -->
+    <section id="projects" class="cards-section">
+        <h2>🚀 Projects & Idea Labs</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Mini Rocket Design</h3>
+                <p>Submit your design and see how other teens improved it.</p>
+                <button onclick="alert('Viewing Project...')">View Project</button>
+            </div>
+            <div class="card">
+                <h3>Space Station Challenge</h3>
+                <p>Collaborate with a team to build a virtual space station.</p>
+                <button onclick="alert('Joining Team...')">Join Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="cards-section">
+        <h2>🎉 Upcoming Events</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Virtual Science Fair</h3>
+                <p>Submit your project and get feedback from peers and mentors.</p>
+                <button onclick="alert('Registering for Event...')">Register</button>
+            </div>
+            <div class="card">
+                <h3>Space Trivia Night</h3>
+                <p>Test your knowledge and earn Nova Points and badges.</p>
+                <button onclick="alert('Joining Trivia...')">Join</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section id="dashboard" class="cards-section">
+        <h2>📊 My Progress Dashboard</h2>
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Completed Missions</h3>
+                <p id="missionsCompleted">0</p>
+            </div>
+            <div class="card">
+                <h3>Nova Points</h3>
+                <p id="novaPoints">0</p>
+            </div>
+            <div class="card">
+                <h3>Badges Earned</h3>
+                <p id="badgesEarned">0</p>
+            </div>
+        </div>
+        <button onclick="simulateProgress()">Simulate Progress</button>
+    </section>
+
+</main>
+
+<footer>
+    <p>Teenova &copy; 2026 | Learn about space | Safe for teens 13-19</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

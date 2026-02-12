@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #0b0b2a, #020210);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #11115c;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,150,255,0.4);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 8px 15px;
+    background: #00c3ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0088cc;
+}
+
+#storyContainer div,
+#musicContainer div,
+#ideaContainer div {
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#photoGallery img {
+    width: 120px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+canvas {
+    background: black;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+}

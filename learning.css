@@ -1,0 +1,58 @@
+body {
+    font-family: Arial;
+    background: radial-gradient(circle at bottom, #0a0a23, #000);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: cyan;
+    text-shadow: 0 0 15px cyan;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    margin: 20px auto;
+    padding: 20px;
+    width: 75%;
+    border-radius: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    background: #1E90FF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00BFFF;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.1);
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+}

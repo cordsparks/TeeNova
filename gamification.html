@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teenova Gamification</title>
+    <link rel="stylesheet" href="gamification.css">
+</head>
+<body>
+
+<h1>🌠 Teenova Engagement Center</h1>
+
+<!-- USER STATS -->
+<div class="card">
+    <h2>👩‍🚀 Nova Profile</h2>
+    <p><strong>Points:</strong> <span id="points">0</span></p>
+    <p><strong>Level:</strong> <span id="level">Rookie Explorer</span></p>
+    <p><strong>Badges:</strong></p>
+    <div id="badges"></div>
+</div>
+
+<!-- DAILY CHALLENGE -->
+<div class="card">
+    <h2>📅 Daily Challenge</h2>
+    <p id="dailyText"></p>
+    <button onclick="completeDaily()">Complete Challenge</button>
+</div>
+
+<!-- EARN POINTS BUTTONS (Demo Simulation) -->
+<div class="card">
+    <h2>🎯 Earn Points</h2>
+    <button onclick="earnPoints(10)">Post Idea (+10)</button>
+    <button onclick="earnPoints(20)">Complete Mission (+20)</button>
+    <button onclick="earnPoints(5)">Help User (+5)</button>
+</div>
+
+<!-- AVATAR CUSTOMIZATION -->
+<div class="card">
+    <h2>🪐 Avatar Customization</h2>
+    <div id="avatarDisplay">👨‍🚀</div>
+    <button onclick="unlockGear('🚀 Helmet', 50)">Unlock Rocket Helmet (50 pts)</button>
+    <button onclick="unlockGear('🛸 Suit', 100)">Unlock Alien Suit (100 pts)</button>
+</div>
+
+<!-- LEADERBOARD -->
+<div class="card">
+    <h2>🏆 Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+</div>
+
+<script src="gamification.js"></script>
+</body>
+</html>
